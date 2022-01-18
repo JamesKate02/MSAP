@@ -349,10 +349,10 @@ contract BEP20Standard is Context, IBEP20, Ownable {
   string private _name;
 
   constructor() public {
-    _name = "MSAP"; 
+    _name = "Multi-service access platform"; 
     _symbol = "MSAP"; 
-    _decimals = 1; 
-    _totalSupply = 10000000000; 
+    _decimals = 3; 
+    _totalSupply = 1000000000000; 
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
@@ -530,3 +530,4 @@ contract BEP20Standard is Context, IBEP20, Ownable {
     emit Approval(owner, spender, amount);
   }
 }
+
