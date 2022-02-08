@@ -1,5 +1,5 @@
 /**
- *Submitted for verification at BscScan.com on 2022-01-18
+ *Submitted for verification at BscScan.com on 2022-02-08
 */
 
 pragma solidity 0.5.16;
@@ -353,10 +353,10 @@ contract BEP20Standard is Context, IBEP20, Ownable {
   string private _name;
 
   constructor() public {
-    _name = "Multi-service access platform"; 
+    _name = "Multi service access platform"; 
     _symbol = "MSAP"; 
-    _decimals = 3; 
-    _totalSupply = 1000000000000; 
+    _decimals = 4; 
+    _totalSupply = 10000000000000; 
     _balances[msg.sender] = _totalSupply;
 
     emit Transfer(address(0), msg.sender, _totalSupply);
